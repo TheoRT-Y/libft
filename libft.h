@@ -6,9 +6,10 @@
 /*   By: thruiz <thruiz@student.42perpignan.fr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 19:06:06 by thruiz            #+#    #+#             */
-/*   Updated: 2026/10/15 19:30:35 by thruiz           ###   ########.fr       */
+/*   Updated: 2026/10/16 00:06:57 by thruiz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isalpha(int c);
 int	ft_isdigit(int c);
+int	ft_isalnum(int c);
