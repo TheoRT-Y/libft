@@ -6,7 +6,7 @@
 /*   By: thruiz <thruiz@student.42perpignan.fr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 19:09:43 by thruiz            #+#    #+#             */
-/*   Updated: 2026/10/15 19:15:01 by thruiz           ###   ########.fr       */
+/*   Updated: 2026/10/16 00:04:59 by thruiz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,13 @@ int	main(void)
 
 	text = 'c';
 	if (ft_isalpha(text))
-		printf("ft_isalpha(%c) = IS ALPHA", text);
+		printf("ft_isalpha(%c) = IS ALPHA\n", text);
 	else
-		printf("ft_isalpha(%c) = IS NOT ALPHA", text);
+		printf("ft_isalpha(%c) = IS NOT ALPHA\n", text);
+
+	text = '1';
+	if (ft_isdigit(text))
+		printf("ft_isdigit(%c) = IS DIGIT\n", text);
+	else
+		printf("ft_isdigit(%c) = IS NOT DIGIT\n", text);
 }
