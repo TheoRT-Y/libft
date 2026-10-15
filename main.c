@@ -6,7 +6,7 @@
 /*   By: thruiz <thruiz@student.42perpignan.fr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 19:09:43 by thruiz            #+#    #+#             */
-/*   Updated: 2026/10/16 00:07:55 by thruiz           ###   ########.fr       */
+/*   Updated: 2026/10/16 00:20:38 by thruiz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,9 @@ int	main(void)
 		printf("ft_isalnum(%c) = IS ALNUM\n", text);
 	else
 		printf("ft_isalnum(%c) = IS NOT ALNUM\n", text);
+	text = '}';
+	if (ft_isascii(text))
+		printf("ft_isascii(%c) = IS ASCII\n", text);
+	else
+		printf("ft_isascii(%c) = IS NOT ASCII\n", text);
 }
