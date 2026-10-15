@@ -6,7 +6,7 @@
 /*   By: thruiz <thruiz@student.42perpignan.fr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 19:09:43 by thruiz            #+#    #+#             */
-/*   Updated: 2026/10/16 00:20:38 by thruiz           ###   ########.fr       */
+/*   Updated: 2026/10/16 00:26:37 by thruiz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,4 +37,9 @@ int	main(void)
 		printf("ft_isascii(%c) = IS ASCII\n", text);
 	else
 		printf("ft_isascii(%c) = IS NOT ASCII\n", text);
+	text = 32;
+	if (ft_isprint(text))
+		printf("ft_isprint(%c) = IS PRINT\n", text);
+	else
+		printf("ft_isprint(%c) = IS NOT PRINT\n", text);
 }
