@@ -6,7 +6,7 @@
 /*   By: thruiz <thruiz@student.42perpignan.fr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 19:09:43 by thruiz            #+#    #+#             */
-/*   Updated: 2026/10/16 00:26:37 by thruiz           ###   ########.fr       */
+/*   Updated: 2026/10/16 00:41:47 by thruiz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,31 +15,34 @@
 
 int	main(void)
 {
-	char	text;
+	char	character;
+	char	*text;
 
-	text = 'c';
-	if (ft_isalpha(text))
-		printf("ft_isalpha(%c) = IS ALPHA\n", text);
+	character = 'c';
+	text = "poulet";
+	if (ft_isalpha(character))
+		printf("ft_isalpha(%c) = IS ALPHA\n", character);
 	else
-		printf("ft_isalpha(%c) = IS NOT ALPHA\n", text);
-	text = '1';
-	if (ft_isdigit(text))
-		printf("ft_isdigit(%c) = IS DIGIT\n", text);
+		printf("ft_isalpha(%c) = IS NOT ALPHA\n", character);
+	character = '1';
+	if (ft_isdigit(character))
+		printf("ft_isdigit(%c) = IS DIGIT\n", character);
 	else
-		printf("ft_isdigit(%c) = IS NOT DIGIT\n", text);
-	text = '<';
-	if (ft_isalnum(text))
-		printf("ft_isalnum(%c) = IS ALNUM\n", text);
+		printf("ft_isdigit(%c) = IS NOT DIGIT\n", character);
+	character = '<';
+	if (ft_isalnum(character))
+		printf("ft_isalnum(%c) = IS ALNUM\n", character);
 	else
-		printf("ft_isalnum(%c) = IS NOT ALNUM\n", text);
-	text = '}';
-	if (ft_isascii(text))
-		printf("ft_isascii(%c) = IS ASCII\n", text);
+		printf("ft_isalnum(%c) = IS NOT ALNUM\n", character);
+	character = '}';
+	if (ft_isascii(character))
+		printf("ft_isascii(%c) = IS ASCII\n", character);
 	else
-		printf("ft_isascii(%c) = IS NOT ASCII\n", text);
-	text = 32;
-	if (ft_isprint(text))
-		printf("ft_isprint(%c) = IS PRINT\n", text);
+		printf("ft_isascii(%c) = IS NOT ASCII\n", character);
+	character = 32;
+	if (ft_isprint(character))
+		printf("ft_isprint(%c) = IS PRINT\n", character);
 	else
-		printf("ft_isprint(%c) = IS NOT PRINT\n", text);
+		printf("ft_isprint(%c) = IS NOT PRINT\n", character);
+	printf("ft_strlen(%s) = %d", text, ft_strlen(text));
 }
